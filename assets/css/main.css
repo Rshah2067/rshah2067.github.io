@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -36,7 +36,18 @@ body {
 ol, ul {
 	list-style: none;
 }
+.video-container {
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    overflow: hidden;
+}
 
+video {
+    width: 100%; /* Video will span the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the video fills the container without distortion */
+}
 blockquote, q {
 	quotes: none;
 }
@@ -64,7 +75,12 @@ input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
-
+.separator {
+    width: 100%; /* Full width of the container */
+    height: 2px; /* Thickness of the line */
+    background-color: #383838; /* Line color */
+    margin: 20px 0; /* Spacing above and below the line */
+}
 input, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -2010,6 +2026,7 @@ input, select, textarea {
 			.wrapper.style1 .title {
 				background: #e97770 url("images/overlay.png");
 				color: #fff;
+				font-size: 1.3rem;
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
@@ -2023,15 +2040,18 @@ input, select, textarea {
 			.wrapper.style2 .title {
 				background: #fff;
 				color: #484d55;
+				font-size: 1.3rem;
 			}
 
 		.wrapper.style3 {
-			background: #f3f3f3 url("images/overlay.png");
+			background: #414141 url("images/overlay.png");
+			color: #fff;
 		}
 
 			.wrapper.style3 .title {
-				background: #f3f3f3 url("images/overlay.png");
-				color: #484d55;
+				background: #414141 url("images/overlay.png");
+				color: #fff;
+				font-size: 1.3rem;
 			}
 
 			.wrapper.style3 .image {
