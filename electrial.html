@@ -18,10 +18,10 @@
 				<section id="header" class="wrapper" style="background: url('images/Hero_shot.jpg') no-repeat center center; background-size: cover; padding: 40px; text-align: center;min-height: 500px;" >
 
 					<!-- Logo -->
-						<div id="logo">
-							<h1><a href="index.html">Thorondor Electrical Design</a></h1>
-                            <p>An RC Bicopter Built in 6 Weeks</p>
-						</div>
+                    <div id="logo" style="position: relative; top: -70px;">
+                        <h1><a href="index.html"style = "color:white">Thorondor</a></h1>
+                        <p style = "color:white;font-size: 16pt;font-weight: bold;">An RC Bicopter Built in 6 Weeks</p>
+                    </div>
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -30,21 +30,21 @@
 								<li>
 									<a href="#">Systems</a>
 									<ul>
-										<li></li><a href="mechanical.html">Mechanical</a></li>
+										<li><a href="mechanical.html">Mechanical</a></li>
 										<li><a href="#">Software</a></li>
 										<li class = "current"><a href="electrial.html">Electrical</a></li>
 										<li><a href="#">Simulation</a></li>
-									</ul>
+                                    </ul>
 								</li>
-								<li><a href="left-sidebar.html">Budget&Bom</a></li>
+								<li><a href="budget.html">Budget&BOM</a></li>
 								<li><a href="right-sidebar.html">Media Gallery</a></li>
-								<li></li><a href="no-sidebar.html">Meet the Team</a></li>
+								<li><a href="team.html">Meet the Team</a></li>
 							</ul>
 						</nav>
                     
 				</section>
                 <div id="main" class="wrapper style3">
-					<div class="title">System Architecture</div>
+					<div class="title">Electrical Architecture</div>
 					<div class="container">
                         <div id="content">
 								<article class="box post">
@@ -54,7 +54,7 @@
 									</a>
                                     <header class="style2">
 										<p style="color:#FFF">
-                                            The Avionics are responsible for controlling and powering all actuators on the aircraft as well as recieving radio commands from the pilot. Power from the batteris
+                                            The Avionics is responsible for controlling and powering all actuators on the aircraft as well as recieving radio commands from the pilot. Power from the batteris
                                             is stepped down by the ESC's for use by the microcontroller and servos. The ESC's Buck converters have a far higher efficency compared to a linear regulator
                                             when stepping down from 14.8V battery power to 5Vs. A Rasbeery Pi-Pico microcontroller is responsible for filtering sensor data and running the flight 
                                             controller. We chose a Pico due to it's superior preformance compared to an At-Mega powered MCU, and it's low price in comparison to other premium microcontrollers
@@ -70,12 +70,13 @@
                         <div id="content">
 								<article class="box post">
                                     <a href="#" class="image featured" style= "border: none;">
-										<img src="images/mechanical/Stability_Plots.png" alt="" />
+										<img src="images/electrical/breadboard.jpg" alt="" />
 									</a>
 									<header class="style2">
 										<p style="color:#FFF">
                                            Initially a breadboard was used to prototype the electrical systems. This allowed for rapid debugging, and iteration. 
-                                           While not the prettiest, it served as a quick and dirty prototype to verify all electrical systems.
+                                           While not the prettiest, it served as a quick and dirty prototype to verify all electrical systems. It also allowed for us to experiment with
+                                           adjusting the COM of the aircraft while on the test stand.
 									</header>
                                     
 							</div>
