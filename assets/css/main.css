@@ -2144,6 +2144,7 @@ input, select, textarea {
 			border-radius: 0.35em;
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
 			padding: 0 1.5em 0 1.5em;
+			background-color: #606167; /* Solid background for the navigation bar */
 		}
 
 			#nav > ul > li {
@@ -2158,8 +2159,7 @@ input, select, textarea {
 
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
-					color: #eee;
-					color: rgba(255, 255, 255, 0.75);
+					color: white; /* Ensure text is readable on the solid background */
 					text-transform: uppercase;
 					text-decoration: none;
 					font-size: 0.7em;
@@ -2175,11 +2175,11 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a {
-					color: #fff;
+					color: #505050; /* Optional darker shade for hover */
 				}
 
 				#nav > ul > li.active > a, #nav > ul > li.active > span {
-					color: #fff;
+					color: #404040; /* Optional darker color for active state */
 				}
 
 	.dropotron {
@@ -2208,8 +2208,7 @@ input, select, textarea {
 			-ms-transition: all .25s ease-in-out;
 			transition: all .25s ease-in-out;
 			display: block;
-			color: #eee;
-			color: rgba(255, 255, 255, 0.75);
+			color: white; /* Ensure text is readable on the solid background */
 			text-transform: uppercase;
 			text-decoration: none;
 			font-size: 0.7em;
@@ -2227,7 +2226,7 @@ input, select, textarea {
 			}
 
 			.dropotron li:hover > a, .dropotron li:hover > span {
-				color: #fff;
+				color: #505050; /* Optional darker shade for hover */
 			}
 
 /* Intro */
