@@ -1815,29 +1815,29 @@ input, select, textarea {
 
 /* Actions */
 
-	ul.actions {
-		list-style: none;
-		padding-left: 0;
-		margin: 3em 0 0 0;
-	}
+ul.actions {
+    list-style: none; /* Removes bullet points */
+    padding-left: 0; /* Removes left padding */
+    margin: 3em 0 0 0; /* Adds space at the top */
+}
 
-		ul.actions li {
-			display: inline-block;
-			margin: 0 0.75em 0 0.75em;
-			padding-left: 0;
-		}
+ul.actions li {
+    display: inline-block; /* Makes the list items appear horizontally */
+    margin: 0 0.75em 0 0.75em; /* Adds spacing between buttons */
+    padding-left: 0; /* Removes left padding from the list items */
+}
 
-			ul.actions li:first-child {
-				margin-left: 0;
-			}
+ul.actions li:first-child {
+    margin-left: 0; /* Removes left margin from the first item */
+}
 
-			ul.actions li:last-child {
-				margin-right: 0;
-			}
+ul.actions li:last-child {
+    margin-right: 0; /* Removes right margin from the last item */
+}
 
-		ul.actions.special {
-			text-align: center;
-		}
+ul.actions.special {
+    text-align: center; /* Centers the items if a special class is used */
+}
 
 /* Feature List */
 

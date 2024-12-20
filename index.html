@@ -11,6 +11,102 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #333;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-item .content {
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin-left: 20px;
+        }
+
+        .timeline-item .date {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timeline-item .date::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 50%;
+            border: 4px solid #fff;
+        }
+
+        /* Styling the rectangular images */
+        .timeline-item .image {
+            width: 100%;
+            max-width: 250px;
+            height: 150px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .timeline-item .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
@@ -31,7 +127,7 @@
 									<a href="#">Systems</a>
 									<ul>
 										<li><a href="mechanical.html#">Mechanical</a></li>
-										<li><a href="#">Software</a></li>
+										<li><a href="software.html">Software</a></li>
 										<li><a href="electrial.html">Electrical</a></li>
 										<li><a href="#">Simulation</a></li>
 									</ul>
@@ -64,7 +160,7 @@
 									Your browser does not support the video tag.
 								</video>
 							</div>
-							<caption class="style1">
+							<caption class="style3">
 								<p style="color:white;">
 									Test Flight with a safety harness that is not in tension. The aircraft has a tether to recieve debug information from the flight controller.
 								</p>
@@ -73,75 +169,80 @@
 
 				</section>
 			<!-- Main -->
-				<section id="main" class="wrapper style3">
-					<div class="title">Timeline</div>
-					<div class="container">
-
-
-						<!-- Features -->
-							<section id="features">
-								<header class="style1">
-									<h2>Dolor consequat feugiat amet veroeros</h2>
-									<p>Feugiat dolor nullam orci pretium phasellus justo</p>
-								</header>
-								<div class="feature-list">
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-sync">Lorem ipsum dolor sit veroeros</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-image">Pretium phasellus justo lorem</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-cog">Tempus sed pretium orci</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-wrench">Aliquam consequat et feugiat</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-check">Dolore laoreet aliquam mattis</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-											</section>
-										</div>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><a href="#" class="button style1 large">Get Started</a></li>
-									<li><a href="#" class="button style2 large">More Info</a></li>
-								</ul>
-							</section>
-
-					</div>
-				</section>
-
-			<!-- Footer -->
-				<section id="footer" class="wrapper">
-						<div id="copyright">
-							<ul>
-								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+			<section id="timeline-section" class="wrapper style3">
+				<div class="title">Timeline</div>				
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="date">1</div>
+						<div class="content">
+							<h3>Thorondor Mk0</h3>
+							<p>For the first sprint we decided to make a </p>
+						</div>
+						<div class="image">
+							<img src="images/timeline/ThorndorMk0.jpg" alt="Image 1">
 						</div>
 					</div>
-				</section>
+			
+					<div class="timeline-item">
+						<div class="date">2</div>
+						<div class="content">
+							<h3>Event 2</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt lorem in augue auctor.</p>
+						</div>
+						<div class="image">
+							<img src="https://via.placeholder.com/250x150" alt="Image 2">
+						</div>
+					</div>
+			
+					<div class="timeline-item">
+						<div class="date">3</div>
+						<div class="content">
+							<h3>Event 3</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula nisl eu sapien sollicitudin.</p>
+						</div>
+						<div class="image">
+							<img src="https://via.placeholder.com/250x150" alt="Image 3">
+						</div>
+					</div>
+			
+					<div class="timeline-item">
+						<div class="date">4</div>
+						<div class="content">
+							<h3>Event 4</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisi augue. Nunc at quam nec velit vehicula.</p>
+						</div>
+						<div class="image">
+							<img src="https://via.placeholder.com/250x150" alt="Image 4">
+						</div>
+					</div>
+			
+					<div class="timeline-item">
+						<div class="date">5</div>
+						<div class="content">
+							<h3>Event 5</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus augue at tincidunt efficitur.</p>
+						</div>
+						<div class="image">
+							<img src="https://via.placeholder.com/250x150" alt="Image 5">
+						</div>
+					</div>
+				</div>
+			</section>
+	
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<div id="copyright">
+					<ul>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>
+							Our GitHub: 
+							<a href="https://github.com/Rshah2067/Thorondor" target="_blank">
+								<i class="fab fa-github"></i> Visit GitHub
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
 
 		</div>
 
