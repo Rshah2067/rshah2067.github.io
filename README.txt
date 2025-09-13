@@ -1,1 +1,0 @@
-Prototype of Website for PIE, Credit to HTML UP for the template Escape Velocity.
