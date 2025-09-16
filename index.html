@@ -10,6 +10,13 @@
                 display: block;
                 margin: 0 auto;
                 }
+                .responsive-imgwide {
+                max-width: 100%;   
+                height: auto;     
+                width: auto;
+                display: block;
+                margin: 0 auto;
+                }
                 .responsive-video{
                 max-width: 80%;   
                 max-height: 600px; 
@@ -51,9 +58,14 @@
         Chimera is a lifting-flamer robot that I am designing with fully custom electronics. I am desinging off-meta because my primary interest is to build for fun, not to build a particularly competitive robot.
         The PCB and electronics were designed in Ki-Cad. I am currently bringing these first development boards up. I have started manufacturing the mechanical components of the robot, with wheels, axles, and other systems being produced. 
     </p>
+    <figure>
+        <img src="media/ChimeraRender.png" class="responsive-img">
+        <figcaption>Render of Custom Circuit Board for Chimera</figcaption>
+    </figure>
+
     <h3>Past Projects</h3>
     <h4>Thorondor</h4>
-    <p>In the fall of my sophmore year I took a class called Principles of Integrated Engineering. 
+    <p>In the fall of my sophmore year, I took a class called Principles of Integrated Engineering. 
         In the classs we were given 6 weeks and 250 dollars to build an integrated engineering project on a team of 5.
         My team decided to attempt to build a RC bi-copter inspired by the V-22 Osprey. I worked on the eletrical systems and 
         helped design the control algorithms. By the end of the 6 weeks we built a drone that could achieve stable flight for a few seconds before pitching out of control
@@ -61,10 +73,20 @@
         class was to make a <a href="https://olincollege.github.io/pie-2024-03/pi-pielots/">website<a> highlighting the project.
         This project was a lot of fun and challenged every member of the team. At some point I want to upgrade the avionics with a Teensy to allow for stable flight.
     </p>
+    <figure>
     <video class = "responsive-video" controls>
         <source src="media/flight.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
+      <figcaption>Test Flight of Thorondor while in a safety harness.</figcaption>
+    </figure>
+    <figure>
+        <video class = "responsive-video" controls>
+            <source src="media/pitchtest.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <figcaption>Iron Bird testing stabilization in the pitch axis</figcaption>
+        </figure>
     <h4>Olin Rocketry</h4>
     <h4>SailTracker</h4>
     <p>
@@ -76,7 +98,7 @@
     <h3>Academics</h3>
     <p>I am currently a Junior at the Olin College of Engineering Studying Electrical and Computer Engineering.
         In addition to my major, I am taking a humanties concentration in Philosphy. I expect to graduate in the spring of 2027.</p>
-    <h4>Current Course Load: Mixed Analog Digital VLSI, Probablistic Modeling, Thermodynamics, Self and World</h4>
+    <h4>Current Course Load: Mixed Analog Digital VLSI, Probablistic Modeling, Thermodynamics, Introduction to Methaphysics and Epistimiology</h4>
     <h3>Previous Course Work</h3>
     <p>These are a few of the courses I have taken in the last 2 years that I have learned a lot from and that I have enjoyed.</p>
     <h3>Introduction to Micro Electronic Circuits</h3>
@@ -104,6 +126,14 @@
         to verify the function of the processor. For my final project I developed
         a memory mapped soft UART core for the processor and tested it in simulation.
         All of the development files can be found on my <a href="https://github.com/Rshah2067/Comp-Arch-Spring-2025">github<a></a>.
+        <figure>
+            <img src="media/processorstepping.png" class="responsive-imgwide">
+            <figcaption>Simulation of RISC-IV Processor stepping through a set of calulations</figcaption>
+        </figure>
+        <figure>
+            <img src="media/UART_Transmission.png" class="responsive-imgwide">
+            <figcaption>Simulation of memory mapped UART module transmitting a message</figcaption>
+        </figure>
     </p>
     <h3>Advanced Systems Programming In Rust</h3>
     <h4>Skills: Rust, Firmware Development</h4>
